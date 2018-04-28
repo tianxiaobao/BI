@@ -1,0 +1,134 @@
+@gray: #e7e7e7;
+.editControls {
+    .headbar {
+        height: 35px;
+        line-height: 35px;
+        cursor: move;
+    }
+    .btn-group {
+        float: left;
+        position: relative;
+        margin-right: 10px;
+        &:after {
+            content: "";
+            width: 1px;
+            height: 50%;
+            border-right: 1px solid @gray;
+            position: absolute;
+            top: 9px;
+            right: -4px;
+        }
+        &:nth-child(n+4) {
+            &:after {
+                border: 0;
+            }
+        }
+        .btn {
+           display: inline-block;
+           margin: 0 8px; 
+           position: relative;
+           &:hover {
+                .editor-select {
+                    color: #000;
+                }
+           }
+        }
+        .editor-select {
+            position: absolute;
+            top: 35px;
+            z-index: 11;
+            background-color: #fff;
+            border: 1px solid @gray;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            max-height: 150px;
+            display: none;
+
+            .select-list {
+                > li {
+                    padding: 2px 18px;
+                    line-height: 22px;
+                    max-width: 60px;
+                    &:hover {
+                        background-color: #eee;
+                    }
+                }
+                .active {
+                    background-color: #eee;
+                }
+            }
+        }
+        .foreColor, .hiliteColor {
+            .editor-select {
+                width: 150px;
+                overflow: hidden;
+                background-color: #f7f7f7;
+                margin-left: -60px;
+            }
+            .select-list {
+                > li {
+                    float: left;
+                    padding: 0;
+                    margin: 5px;
+                    > i {
+                        display: block;
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+        }
+        em {
+            font-style: italic;
+            font-weight: bold;
+        }
+        .fontSize {
+            .editor-select {
+                left: -6px;
+            }
+        }
+        .fontName {
+            .editor-select {
+                width: 110px;
+                left: -22px;
+            }
+        }
+        .link-box {
+            position: absolute;
+            top: 35px;
+            right: -40px;
+            z-index: 11;
+            width: 180px;
+            background-color: #fff;
+            padding: 2px 10px;
+            border: 1px solid @gray;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            display: none;
+            .url-text {
+                border: 1px solid #ccc;
+                width: calc(100% - 30px);
+                height: 21px;
+                margin-right: 5px;
+            }
+        }
+    }
+    .icon {
+        margin-top: -6px;
+    }
+}
+
+.easy-editor {
+    resize: none; 
+    overflow: auto; 
+    padding: 10px;
+    outline:none;
+    width: calc(100% - 4px);
+    height: calc(100% - 25px);
+    border-top: 1px solid @gray;
+    a {
+        color: #0098f7;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

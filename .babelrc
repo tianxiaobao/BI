@@ -1,0 +1,18 @@
+{
+    "presets": [
+        [
+            "stage-3"
+        ]
+    ],
+    "plugins": [
+        "transform-runtime",
+        "transform-exponentiation-operator",
+        [
+            "component",
+            {
+                "libraryName": "jcloud-ele-ui",
+                "styleLibraryName": "theme-jcloud"
+            }
+        ]
+    ]
+}

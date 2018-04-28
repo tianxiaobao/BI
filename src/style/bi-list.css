@@ -1,0 +1,73 @@
+.bi-list li {
+    width: 25px;
+    height: 25px;
+    border: 1px solid transparent;
+    margin: 0 3px 4px 0;
+    cursor: pointer;
+    background:url(../images/sprites.png) 100px 100px no-repeat;
+}
+
+.bi-list li.selected{
+    border: 1px solid rgba(81,210,183,.3);
+}
+
+.bi-list li.table{
+    background-position: -200px -25px;
+}
+.bi-list li.table.highlight{
+    background-position: -150px 0px;
+}
+.bi-list li.line{
+    background-position: -25px -25px;
+}
+.bi-list li.line.highlight{
+    background-position: -25px 0px;
+}
+.bi-list li.area{
+    background-position: -75px -25px;
+}
+.bi-list li.area.highlight{
+    background-position: -75px 0px;
+}
+.bi-list li.bar{
+    background-position: 0px -25px;
+}
+.bi-list li.bar.highlight{
+    background-position: 0px 0px;
+}
+.bi-list li.colBar{
+    background-position: -175px -25px;
+}
+.bi-list li.colBar.highlight{
+    background-position: -175px 0px;
+}
+.bi-list li.stackBar{
+    background-position: -250px -25px;
+}
+.bi-list li.stackBar.highlight{
+    background-position: -250px 0px;
+}
+.bi-list li.pie{
+    background-position: -225px -25px;
+}
+.bi-list li.pie.highlight{
+    background-position: -225px 0px;
+}
+.bi-list li.funnel{
+    background-position: -100px -25px;
+}
+.bi-list li.funnel.highlight{
+    background-position: -100px 0px;
+}
+.bi-list li.scatter{
+    background-position: -50px -25px;
+}
+.bi-list li.scatter.highlight{
+    background-position: -50px 0px;
+}
+.bi-list li.radar{
+    background-position: -125px -25px;
+}
+.bi-list li.radar.highlight{
+    background-position: -125px 0px;
+}
